@@ -1,15 +1,26 @@
-import type {Meta, StoryObj} from '@storybook/angular';
-import {SomeComponent} from '../app/some/some.component';
-import {applicationConfig} from '@storybook/angular';
-import {TranslocoRootModule} from '../app/transloco-root.module';
-import {importProvidersFrom} from '@angular/core';
+import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
+import { SomeComponent } from '../app/some/some.component';
+import { applicationConfig } from '@storybook/angular';
+import {
+  TranslocoHttpLoader,
+  translocoConf,
+} from '../app/transloco-root.module';
+import { provideHttpClient } from '@angular/common/http';
+import { TranslocoModule, provideTransloco } from '@ngneat/transloco';
 
 const meta: Meta<SomeComponent> = {
   component: SomeComponent,
   decorators: [
+    moduleMetadata({
+      imports: [TranslocoModule],
+    }),
     applicationConfig({
       providers: [
-        importProvidersFrom(TranslocoRootModule),
+        provideHttpClient(),
+        provideTransloco({
+          config: translocoConf,
+          loader: TranslocoHttpLoader,
+        }),
       ],
     }),
   ],
