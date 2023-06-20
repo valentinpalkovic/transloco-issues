@@ -101,6 +101,10 @@
         "storybook": {
           "builder": "@storybook/angular:start-storybook",
           "options": {
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
             "configDir": ".storybook",
             "browserTarget": "storybook-transloco:build",
             "compodoc": false,
@@ -110,6 +114,10 @@
         "build-storybook": {
           "builder": "@storybook/angular:build-storybook",
           "options": {
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
             "configDir": ".storybook",
             "browserTarget": "storybook-transloco:build",
             "compodoc": false,

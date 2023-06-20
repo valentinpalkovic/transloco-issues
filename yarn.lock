@@ -1856,7 +1856,7 @@
     cosmiconfig "^7.0.0"
     tslib "^2.3.0"
 
-"@ngneat/transloco-utils@^3.0.1":
+"@ngneat/transloco-utils@3.0.5":
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/@ngneat/transloco-utils/-/transloco-utils-3.0.5.tgz#0a89407d77af14c905c47a3492196f769bd322ab"
   integrity sha512-Xn9GaLUocXSPMhErNHbUyoloDm9sb+JaYszZJFL9F8em6frPQDSJxcYk9pV0caWpAU8INlksJSYgx1LXAH18mw==
@@ -1864,12 +1864,12 @@
     cosmiconfig "^8.1.3"
     tslib "^2.3.0"
 
-"@ngneat/transloco@4.2.2":
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/@ngneat/transloco/-/transloco-4.2.2.tgz#a58726a825977a05879637c492e3007670bc36c9"
-  integrity sha512-IyLNUiC0O4aCRtvZ5D6KER9KP3UWoONJTAT7hhtBNWuLNNwamV29tlq08cYuMOKpp8i+YUWf9vTcRNeHsIQgYg==
+"@ngneat/transloco@4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@ngneat/transloco/-/transloco-4.3.0.tgz#43fac7f0d5130349a514ca0199e06cb8c1c639be"
+  integrity sha512-KUhGvp1ki+jvrM2PO27Tgzme1HkFmvDgS+7VyGxHta35wZEyoH6/r/EAXvfurPeYgaP6IaEMhUvAVT1WDgYwUg==
   dependencies:
-    "@ngneat/transloco-utils" "^3.0.1"
+    "@ngneat/transloco-utils" "3.0.5"
     flat "5.0.2"
     lodash.kebabcase "^4.1.1"
     ora "^5.4.1"
